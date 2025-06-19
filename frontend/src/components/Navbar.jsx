@@ -1,13 +1,18 @@
 import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext'
 
 const Navbar = () => {
 
-    const [visible, setVisible] = useState(false)
+    const [visible, setVisible] = useState(false)   
+    const navigate = useNavigate();
+    const { setShowSearch, getCartCount, token, setToken, setCartItems } = useContext(ShopContext)
 
-    const { setShowSearch, getCartCount, navigate, token, setToken, setCartItems } = useContext(ShopContext)
+    const handleClick = () => {
+    setShowSearch(true);
+    navigate('/collection');  // replace with your route
+  };
 
     const logout = () => {
         navigate('/login')
@@ -42,7 +47,7 @@ const Navbar = () => {
             </ul>
 
             <div className='flex items-center gap-6'>
-                <img onClick={() => setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
+                <img onClick={handleClick} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
 
                 <div className='group relative'>
 

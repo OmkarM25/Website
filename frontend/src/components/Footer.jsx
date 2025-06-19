@@ -8,7 +8,8 @@ const Footer = () => {
                 <div >
                     <img src={assets.logo} className='mb-5 w-32' alt="" />
                     <p className='w-full md:w-2/3 text-gray-600'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur totam ratione facilis nesciunt dolorum ullam doloribus at accusamus amet numquam adipisci debitis sunt earum consequuntur, odit aliquid id nihil architecto.
+                    Shivhambho Electricals is a popular electrical products wholesaler/supplier in Hadapsar, Pune since 2012.
+                    At Shivshambho Electricals we provide a vasriety of electric products and equipments such as fans, lights, mixers, water heaters, irons, premium switches, wires and cables, led panel lights and many more.
                     </p>
                 </div>
 
@@ -33,6 +34,7 @@ const Footer = () => {
             <div>
                 <hr />
                 <p className='py-5 text-sm text-center'>Copyright 2024 Shivshambho Electricals - All Rights reserved</p>
+                <p className='py-2 text-sm text-gray-500 text-center'>Website created by Omkar, Sumit & Sujal</p>
             </div>
         </div>
     )
