@@ -29,7 +29,7 @@ const Verify = () => {
             if (!token) {
                 return null;
             }
-            const response = await axios.post(backendUrl + '/api/order/verifyStripe',
+            const response = await axios.post(backendUrl + 'api/order/verifyStripe',
                 {success,orderId},
                 { headers: { Authorization: `Bearer ${token}` } }
             )

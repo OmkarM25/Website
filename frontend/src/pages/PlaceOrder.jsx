@@ -81,7 +81,7 @@ const PlaceOrder = () => {
         try {
           const { razorpay_payment_id, razorpay_order_id, razorpay_signature } = response;
           const { data } = await axios.post(
-            backendUrl + '/api/order/verifyRazorpay',
+            backendUrl + 'api/order/verifyRazorpay',
             {
               userId,                 // Make sure userId is accessible here
               razorpay_order_id,
@@ -146,7 +146,7 @@ const PlaceOrder = () => {
 
         // API CALLS FOR COD ORDER
         case 'cod':
-          const response = await axios.post(backendUrl+'/api/order/place', 
+          const response = await axios.post(backendUrl+'api/order/place', 
             orderData, 
             { headers: { Authorization: `Bearer ${token}` } })
             // {headers:token})
@@ -163,7 +163,7 @@ const PlaceOrder = () => {
 
 
           case 'stripe':
-            const responseStripe = await axios.post(backendUrl+'/api/order/stripe', 
+            const responseStripe = await axios.post(backendUrl+'api/order/stripe', 
               orderData, 
               { headers: { Authorization: `Bearer ${token}` } })
               if (responseStripe.data.success){
@@ -178,7 +178,7 @@ const PlaceOrder = () => {
 
 
             case 'razorpay':
-              const responseRazorpay = await axios.post(backendUrl+'/api/order/razorpay',
+              const responseRazorpay = await axios.post(backendUrl+'api/order/razorpay',
                 orderData,
                 { headers: { Authorization: `Bearer ${token}`}})
                 if (responseRazorpay.data.success) {

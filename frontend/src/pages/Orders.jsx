@@ -15,7 +15,7 @@ const Orders = () => {
         return null
       }
 
-      const response = await axios.post(backendUrl+'/api/order/userorders',
+      const response = await axios.post(backendUrl+'api/order/userorders',
         {},
         {headers:{ Authorization: `Bearer ${token}` } }
       )
