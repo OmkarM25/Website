@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/assets';
 import RelatedProducts from '../components/RelatedProducts';
-import Collection from './Collection';
+// import Collection from './Collection';
 
 const Product = () => {
 

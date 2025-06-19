@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext'
 import { toast } from 'react-toastify'
 import axios from 'axios'
-import { currency } from '../../../admin/src/App'
+
 
 
 const PlaceOrder = () => {
