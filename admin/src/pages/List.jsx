@@ -11,7 +11,7 @@ const List = ({token}) => {
         try {
 
             const response = await axios.get(
-                backendUrl + "/api/product/list",
+                backendUrl + "api/product/list",
                 
                 {
                     headers: {
@@ -40,7 +40,7 @@ const List = ({token}) => {
         try {
             
             const response = await axios.post(
-                backendUrl + "/api/product/remove",
+                backendUrl + "api/product/remove",
                 {id},
                 {
                     headers: {
