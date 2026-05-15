@@ -34,7 +34,7 @@ const Footer = () => {
             <div>
                 <hr />
                 <p className='py-5 text-sm text-center'>Copyright 2024 Shivshambho Electricals - All Rights reserved</p>
-                <p className='py-2 text-sm text-gray-500 text-center'>Website created by Omkar Maharnor</p>
+                {/* <p className='py-2 text-sm text-gray-500 text-center'>Website created by Omkar Maharnor</p> */}
             </div>
         </div>
     )
